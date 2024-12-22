@@ -62,7 +62,7 @@ function App() {
               <img src={Logo} alt="Logo" className="logo" />
             </div>
 
-            <h1>Welcome to my portfolio! 1</h1>
+            <h1>Welcome to my portfolio! 1, 2</h1>
             <h2>Where you will find the best details of our company and our completed projects</h2>
 
             <div className="carousel-container">
