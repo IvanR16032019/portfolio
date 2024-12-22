@@ -33,7 +33,7 @@
     "globals": "^15.12.0",
     "vite": "^4.4.0"
   },
-  "homepage": "https://ivan.github.io/portfolio",
+  "homepage": "https://IvanR16032019.github.io/portfolio",
   "vite": {
     "base": "/portfolio/"
   }
