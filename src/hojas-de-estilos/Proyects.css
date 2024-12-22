@@ -1,0 +1,235 @@
+/* General styles for the container */
+.project-container {
+  max-width: 100%; /* 100% width for better mobile responsiveness */
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  background-color: transparent;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Title styling */
+.title-project {
+  font-size: 28px; /* Reduced size for mobile */
+  color: black;
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+  margin-top: 0;
+  margin-bottom: 20px;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.title-project.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Subtitle styling */
+.languajes {
+  font-size: 16px; /* Adjusted font size */
+  text-align: left;
+  opacity: 0;
+  transform: translateY(-50px);
+  transition: opacity 1s, transform 1s;
+}
+
+.languajes.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Styling for the project list container */
+.projects-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Adjusted minimum size for smaller screens */
+  gap: 15px; /* Reduced gap for smaller screens */
+  margin-top: 20px;
+  justify-items: center; /* Center content inside grid columns */
+}
+
+/* Animating the project cards */
+.project-card {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  opacity: 0; /* Initially hidden */
+  transform: translateX(-100px); /* Start from the left */
+  animation: slide-in 0.7s forwards; /* Apply slide-in animation */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Keep the hover effect transition */
+}
+
+/* Animation for slide-in */
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); /* Start from the left */
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0); /* End at normal position */
+  }
+}
+
+/* Hover effect for the project cards */
+.project-card:hover {
+  transform: translateY(-5px); /* Move the project card up */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Darken shadow on hover */
+}
+
+/* Hover effect for the project cards while sliding */
+.project-card.fade-in:hover {
+  transform: translateY(-5px); /* Maintain the hover effect while sliding */
+}
+
+.project-name {
+  font-size: 20px; /* Reduced font size for mobile */
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.project-description {
+  font-size: 14px; /* Reduced font size for better readability */
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.project-link {
+  font-size: 14px; /* Reduced font size for mobile */
+  color: #0065d2;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.project-link:hover {
+  color: #004ba0;
+}
+
+/* Button styling */
+.back-btn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background-color: #0065d2;
+  border: 2px solid #ccc;
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.back-btn:hover {
+  background-color: #007BFF;
+  border-color: #007BFF;
+  color: white;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Estilos generales para los divs */
+.obj1, .obj2, .obj3 {
+  width: 100%; /* Full width for mobile */
+  margin: 10px 0; /* Vertical margin for better spacing */
+  padding: 15px; /* Adjust padding for better mobile view */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: #D3D3D3; /* Fondo azul */
+  color: black; /* Color del texto */
+  text-align: left; /* Centrar texto dentro del div */
+  transition: background-color 0.3s ease; /* Transición suave para el cambio de color */
+  opacity: 0; /* Comienza invisible */
+  transform: translateY(-50px); /* Inicia desde abajo */
+  animation: fade-in 1s forwards; /* Animación de desvanecimiento */
+}
+
+/* Animación para los divs de los objetivos */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Cambio de color cuando el cursor pasa encima */
+.obj1:hover, .obj2:hover, .obj3:hover {
+  background-color: #C0C0C0; /* Color verde cuando se pasa el cursor */
+}
+
+/* Estilo para alinear los divs en una fila */
+.container-obj {
+  display: flex; /* Usamos flexbox para alinearlos en una fila */
+  justify-content: space-between; /* Espaciado entre los divs */
+  align-items: center; /* Alinea verticalmente al centro */
+  flex-wrap: wrap; /* Ensure wrapping in mobile view */
+  margin-top: 40px; /* Espaciado superior */
+}
+
+/* Responsivo: Cuando el tamaño de la pantalla sea pequeño, los divs se apilan */
+@media (max-width: 600px) {
+  .title-project {
+    font-size: 24px; /* Smaller title size for mobile */
+    height: auto; /* Ensure no overflow on smaller screens */
+    margin-top: 80px;
+  }
+
+  .projects-list {
+    grid-template-columns: 1fr; /* Show projects in a single column */
+  }
+
+  .project-card {
+    padding: 15px; /* Reduce padding in cards for smaller screens */
+  }
+
+  .project-name {
+    font-size: 18px; /* Reduced project name size */
+  }
+
+  .project-description {
+    font-size: 12px; /* Adjust description size for mobile */
+  }
+
+  .project-link {
+    font-size: 12px; /* Adjust link size for mobile */
+  }
+
+  .obj1, .obj2, .obj3 {
+    width: 100%; /* Full width for mobile */
+    margin: 10px 0; /* Vertical margin */
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .project-container {
+    padding: 40px 20px;
+  }
+
+  .title-project {
+    font-size: 32px;
+  }
+
+  .projects-list {
+    grid-template-columns: repeat(3, 1fr); /* Three columns for medium screens */
+  }
+
+  .project-card {
+    padding: 25px;
+  }
+}
+
+.obj-title {
+  height: 50px;
+  margin-top: 20px;
+}
