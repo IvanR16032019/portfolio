@@ -14,7 +14,7 @@ function App() {
   const location = useLocation(); // Hook para obtener la ubicación actual de la ruta
 
   const images = [
-    '/imagenes/img1.png',
+    './imagenes/img1.png',
     '/imagenes/img2.png',
     '/imagenes/img3.png',
     '/imagenes/img4.jpg',
