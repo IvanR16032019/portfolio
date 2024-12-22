@@ -3,16 +3,10 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  // Cambiar la raíz del proyecto a la carpeta 'src'
-  root: 'src',
   build: {
-    outDir: '../dist', // Salida en la carpeta 'dist', que debe estar fuera de 'src'
+    outDir: 'dist',  // Los archivos construidos se almacenarán en la carpeta 'dist'
   },
-  publicDir: '../public', // Si tienes archivos estáticos como imágenes, ponlos en 'public'
 });
-
-
-
 
 
 //import { defineConfig } from 'vite'
