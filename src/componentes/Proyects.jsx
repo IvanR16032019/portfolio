@@ -13,9 +13,9 @@ const Proyects = () => {
 
   const projects = [
     {
-      name: 'Proyecto 1',
+      name: 'Calculator',
       description: 'Este es un proyecto de ejemplo que demuestra mis habilidades en React.',
-      link: 'https://link-a-proyecto1.com',
+      link: 'https://calculator-yr48.onrender.com/',
     },
     {
       name: 'Proyecto 2',
@@ -24,6 +24,12 @@ const Proyects = () => {
     },
     {
       name: 'Proyecto 3',
+      description: 'Aplicación móvil usando React Native que ayuda a los usuarios a gestionar sus tareas diarias.',
+      link: 'https://link-a-proyecto3.com',
+    },
+
+    {
+      name: 'Proyecto 4',
       description: 'Aplicación móvil usando React Native que ayuda a los usuarios a gestionar sus tareas diarias.',
       link: 'https://link-a-proyecto3.com',
     }
