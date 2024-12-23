@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom'; // Importamos Link de react-router-dom
+import { Link } from 'react-router-dom'; // Usamos Link de react-router-dom
 import './hojas-de-estilos/Navbar.css'; // Estilos específicos para la barra de navegación
 
 function Navbar() {

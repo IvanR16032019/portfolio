@@ -30,7 +30,7 @@
 /* Subtitle styling */
 .languajes {
   font-size: 16px; /* Adjusted font size */
-  text-align: left;
+  text-align: center;
   opacity: 0;
   transform: translateY(-50px);
   transition: opacity 1s, transform 1s;
@@ -114,7 +114,7 @@
 /* Button styling */
 .back-btn {
   position: absolute;
-  top: 20px;
+  top: 50px;
   left: 20px;
   background-color: #0065d2;
   border: 2px solid #ccc;

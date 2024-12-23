@@ -2,12 +2,12 @@ import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import '../src/index.css'
 import App from './App.jsx';
-import { BrowserRouter as Router } from 'react-router-dom'; // Importa Router
+import { HashRouter } from 'react-router-dom'; // Cambiar a HashRouter
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <Router> {/* Envuelve App con Router */}
+    <HashRouter> {/* Envuelve App con HashRouter */}
       <App />
-    </Router>
+    </HashRouter>
   </StrictMode>
 );

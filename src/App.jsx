@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Route, Routes, useNavigate, useLocation } from 'react-router-dom';
+import { Route, Routes, useNavigate, useLocation } from 'react-router-dom'; // Usamos HashRouter
 import './App.css';
 // Importar los componentes
 import Company from './componentes/Company';
