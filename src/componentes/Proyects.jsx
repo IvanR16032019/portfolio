@@ -14,13 +14,13 @@ const Proyects = () => {
   const projects = [
     {
       name: 'Calculator',
-      description: 'Este es un proyecto de ejemplo que demuestra mis habilidades en React.',
-      link: 'https://calculator-yr48.onrender.com/',
+      description: 'Always have your web calculator on hand.',
+      link: 'https://calculator1-mst3.onrender.com/',
     },
     {
-      name: 'Proyecto 2',
-      description: 'Un sitio web interactivo construido con JavaScript y CSS para mejorar la experiencia de usuario.',
-      link: 'https://link-a-proyecto2.com',
+      name: 'Tip app',
+      description: 'Manage tips in a safe and fast way, providing a better customer experience',
+      link: 'https://tip-uz6b.onrender.com/',
     },
     {
       name: 'Proyecto 3',
