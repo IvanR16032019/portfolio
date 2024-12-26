@@ -23,9 +23,9 @@ const Proyects = () => {
       link: 'https://tip-uz6b.onrender.com/',
     },
     {
-      name: 'Proyecto 3',
-      description: 'Aplicación móvil usando React Native que ayuda a los usuarios a gestionar sus tareas diarias.',
-      link: 'https://link-a-proyecto3.com',
+      name: 'Billing (open in incognito mode in your browser)',
+      description: 'Here is my billing app for calculating your sales when shipping with invoice and customer name included',
+      link: 'https://billing-hwod.onrender.com/',
     },
 
     {
