@@ -23,7 +23,7 @@ const Proyects = () => {
       link: 'https://tip-uz6b.onrender.com/',
     },
     {
-      name: 'Billing (open in incognito mode in your browser)',
+      name: 'Billing (open in incognito mode in your browser for greater efficiency)',
       description: 'Here is my billing app for calculating your sales when shipping with invoice and customer name included',
       link: 'https://billing-hwod.onrender.com/',
     },
