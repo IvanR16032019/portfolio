@@ -29,9 +29,9 @@ const Proyects = () => {
     },
 
     {
-      name: 'Proyecto 4',
-      description: 'Aplicación móvil usando React Native que ayuda a los usuarios a gestionar sus tareas diarias.',
-      link: 'https://link-a-proyecto3.com',
+      name: 'User management - only PC (crud / public test API)',
+      description: 'Application for real-time employee management, authentication to protect user information.',
+      link: 'https://crud-api-yepo.onrender.com/',
     }
   ];
 
@@ -84,7 +84,7 @@ const Proyects = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Ver Proyecto
+              View Project
             </a>
           </div>
         ))}
