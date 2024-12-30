@@ -32,6 +32,12 @@ const Proyects = () => {
       name: 'User management - only PC (crud / public test API)',
       description: 'Application for real-time employee management, authentication to protect user information.',
       link: 'https://crud-api-yepo.onrender.com/',
+    },
+
+    {
+      name: 'Galaxy animation',
+      description: 'Beautiful galaxy animation to contemplate the beauty of creation.',
+      link: 'https://gx-see2.onrender.com/',
     }
   ];
 
