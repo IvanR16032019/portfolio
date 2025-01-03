@@ -233,3 +233,17 @@
   height: 50px;
   margin-top: 20px;
 }
+
+.project-link-alt {
+  font-size: 14px; /* Tamaño similar al enlace principal */
+  color: #d26000; /* Color distinto para diferenciar */
+  text-decoration: none;
+  font-weight: bold;
+  display: block; /* Mostrar en una nueva línea */
+  margin-top: 10px; /* Espaciado entre los enlaces */
+  transition: color 0.3s ease;
+}
+
+.project-link-alt:hover {
+  color: #b34700; /* Cambio de color en hover */
+}

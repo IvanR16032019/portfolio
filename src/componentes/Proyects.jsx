@@ -16,28 +16,31 @@ const Proyects = () => {
       name: 'Calculator',
       description: 'Always have your web calculator on hand.',
       link: 'https://calculator1-mst3.onrender.com/',
+      altLink: 'https://github.com/IvanR16032019/calculator1.git' // Enlace alternativo
     },
     {
       name: 'Tip app',
       description: 'Manage tips in a safe and fast way, providing a better customer experience',
       link: 'https://tip-uz6b.onrender.com/',
+      altLink: 'https://github.com/IvanR16032019/tip.git' // Enlace alternativo
     },
     {
       name: 'Billing (open in incognito mode in your browser for greater efficiency)',
       description: 'Here is my billing app for calculating your sales when shipping with invoice and customer name included',
       link: 'https://billing-hwod.onrender.com/',
+      altLink: 'https://github.com/IvanR16032019/billing.git' // Enlace alternativo
     },
-
     {
       name: 'User management - only PC (crud / public test API)',
       description: 'Application for real-time employee management, authentication to protect user information.',
       link: 'https://crud-api-yepo.onrender.com/',
+      altLink: 'https://github.com/IvanR16032019/crud_api.git' // Enlace alternativo
     },
-
     {
       name: 'Galaxy animation',
       description: 'Beautiful galaxy animation to contemplate the beauty of creation.',
       link: 'https://gx-see2.onrender.com/',
+      altLink: 'https://github.com/IvanR16032019/gx' // Enlace alternativo
     }
   ];
 
@@ -91,6 +94,14 @@ const Proyects = () => {
               rel="noopener noreferrer"
             >
               View Project
+            </a>
+            <a
+              href={project.altLink} // Enlace alternativo para cada proyecto
+              className="project-link-alt"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
             </a>
           </div>
         ))}
