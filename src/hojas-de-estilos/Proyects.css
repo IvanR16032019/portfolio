@@ -247,3 +247,50 @@
 .project-link-alt:hover {
   color: #b34700; /* Cambio de color en hover */
 }
+
+/* Estilo para el contenedor de GitHub */
+.github-container {
+  text-align: center;
+  padding: 20px;
+  background-color: #f4f4f4; /* Fondo suave */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+/* Estilo para el título dentro del contenedor */
+.github-container h3 {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333; /* Color oscuro para el título */
+  margin-bottom: 15px; /* Espaciado debajo del título */
+}
+
+/* Estilo para el enlace del repositorio */
+.github-link {
+  font-size: 16px;
+  color: #0065d2; /* Color azul */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  display: inline-block;
+  margin-top: 10px;
+}
+
+/* Cambio de color al pasar el cursor por encima */
+.github-link:hover {
+  color: #004ba0; /* Cambio a un azul más oscuro */
+  text-decoration: underline; /* Subrayado al hacer hover */
+}
+
+/* Estilo responsivo para pantallas más pequeñas */
+@media (max-width: 600px) {
+  .github-container h3 {
+    font-size: 20px; /* Reducir el tamaño del título en pantallas pequeñas */
+  }
+
+  .github-link {
+    font-size: 14px; /* Reducir el tamaño del enlace en pantallas pequeñas */
+  }
+}

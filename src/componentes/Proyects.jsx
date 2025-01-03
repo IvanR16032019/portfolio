@@ -6,50 +6,46 @@ import '../hojas-de-estilos/Proyects.css';
 const Proyects = () => {
   const navigate = useNavigate();
 
-  // Este useEffect asegura que la página se desplace al inicio al cargar el componente
   useEffect(() => {
-    window.scrollTo(0, 0);  // Desplazarse a la parte superior de la página
-  }, []); // El array vacío asegura que esto solo se ejecute una vez, cuando el componente se monta
+    window.scrollTo(0, 0); // Desplazarse a la parte superior de la página
+  }, []);
 
   const projects = [
     {
       name: 'Calculator',
       description: 'Always have your web calculator on hand.',
       link: 'https://calculator1-mst3.onrender.com/',
-      altLink: 'https://github.com/IvanR16032019/calculator1.git' // Enlace alternativo
+      altLink: 'https://github.com/IvanR16032019/calculator1.git'
     },
     {
       name: 'Tip app',
       description: 'Manage tips in a safe and fast way, providing a better customer experience',
       link: 'https://tip-uz6b.onrender.com/',
-      altLink: 'https://github.com/IvanR16032019/tip.git' // Enlace alternativo
+      altLink: 'https://github.com/IvanR16032019/tip.git'
     },
     {
       name: 'Billing (open in incognito mode in your browser for greater efficiency)',
       description: 'Here is my billing app for calculating your sales when shipping with invoice and customer name included',
       link: 'https://billing-hwod.onrender.com/',
-      altLink: 'https://github.com/IvanR16032019/billing.git' // Enlace alternativo
+      altLink: 'https://github.com/IvanR16032019/billing.git'
     },
     {
       name: 'User management - only PC (crud / public test API)',
       description: 'Application for real-time employee management, authentication to protect user information.',
       link: 'https://crud-api-yepo.onrender.com/',
-      altLink: 'https://github.com/IvanR16032019/crud_api.git' // Enlace alternativo
+      altLink: 'https://github.com/IvanR16032019/crud_api.git'
     },
     {
       name: 'Galaxy animation',
       description: 'Beautiful galaxy animation to contemplate the beauty of creation.',
       link: 'https://gx-see2.onrender.com/',
-      altLink: 'https://github.com/IvanR16032019/gx' // Enlace alternativo
+      altLink: 'https://github.com/IvanR16032019/gx'
     }
   ];
 
   return (
     <div className="project-container">
-      <button
-        className="back-btn"
-        onClick={() => navigate("/")}
-      >
+      <button className="back-btn" onClick={() => navigate("/")}>
         Back
       </button>
 
@@ -96,7 +92,7 @@ const Proyects = () => {
               View Project
             </a>
             <a
-              href={project.altLink} // Enlace alternativo para cada proyecto
+              href={project.altLink}
               className="project-link-alt"
               target="_blank"
               rel="noopener noreferrer"
@@ -105,6 +101,19 @@ const Proyects = () => {
             </a>
           </div>
         ))}
+      </div>
+
+      {/* Nuevo contenedor para el enlace de GitHub */}
+      <div className="github-container">
+        <h3>GitHub para mi repositorio</h3>
+        <a
+          href="https://github.com/IvanR16032019/portfolio.git"
+          className="github-link"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Visitar mi repositorio
+        </a>
       </div>
     </div>
   );
