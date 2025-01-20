@@ -11,6 +11,13 @@ const Proyects = () => {
   }, []);
 
   const projects = [
+
+    {
+      name: 'Fashion',
+      description: 'Fashion app, access and view the best beauty and health products for your skin.',
+      link: 'https://fashion-r0lj.onrender.com/',
+      altLink: 'https://github.com/IvanR16032019/fashion.git'
+    },
     {
       name: 'Calculator',
       description: 'Always have your web calculator on hand.',
