@@ -122,6 +122,19 @@ const Proyects = () => {
           Visitar mi repositorio
         </a>
       </div>
+      <div className="github-container">
+        <h3>Download my Cv</h3>
+        <a
+          href="../public/cv/Hoja.pdf"
+          className="github-link"
+          target="_blank"
+          rel="noopener noreferrer"
+          download="Hoja.pdf"
+        >
+          Here
+        </a>
+      </div>
+
     </div>
   );
 }
