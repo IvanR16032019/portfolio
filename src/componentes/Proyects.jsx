@@ -111,15 +111,15 @@ const Proyects = () => {
 
       {/* Contenedor para el enlace de descarga del PDF */}
       <div className="github-container">
-  <h3>Curriculum</h3>
-  <a
-    href="/cv/Hoja.pdf"  // Ruta relativa al archivo en la carpeta public
-    className="github-link"
-    download="Ivan_Rodriguez_Curriculum.pdf"  // Nombre del archivo al descargar
-  >
-    Download
-  </a>
-</div>
+        <h3>CV for more details about me</h3>
+        <a
+          href="/cv/Hoja.pdf"  // Ruta relativa al archivo en la carpeta public
+          className="github-link"
+          download="Ivan_Rodriguez_Curriculum.pdf"  // Nombre del archivo al descargar
+        >
+          Download
+        </a>
+      </div>
 
 
 
