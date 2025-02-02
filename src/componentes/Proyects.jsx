@@ -11,7 +11,6 @@ const Proyects = () => {
   }, []);
 
   const projects = [
-
     {
       name: 'Fashion',
       description: 'Fashion app, access and view the best beauty and health products for your skin.',
@@ -110,7 +109,20 @@ const Proyects = () => {
         ))}
       </div>
 
-      {/* Nuevo contenedor para el enlace de GitHub */}
+      {/* Contenedor para el enlace de descarga del PDF */}
+      <div className="github-container">
+  <h3>Curriculum</h3>
+  <a
+    href="/cv/Hoja.pdf"  // Ruta relativa al archivo en la carpeta public
+    className="github-link"
+    download="Ivan_Rodriguez_Curriculum.pdf"  // Nombre del archivo al descargar
+  >
+    Download
+  </a>
+</div>
+
+
+
       <div className="github-container">
         <h3>GitHub para mi repositorio</h3>
         <a
