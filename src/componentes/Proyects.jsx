@@ -49,6 +49,14 @@ const Proyects = () => {
     }
   ];
 
+  const projectApi = [
+    {
+      name: 'Crud Students (Node JS, PostgreSQL)',
+      description: 'Check out the details of the backend development of this app. Here is the code with the HTTP requests and CRUD functions. Click and see the code on github',
+      altLink: 'https://github.com/IvanR16032019/schoolApi.git'
+    }
+  ];
+
   return (
     <div className="project-container">
       <button className="back-btn" onClick={() => navigate("/")}>
@@ -109,6 +117,25 @@ const Proyects = () => {
         ))}
       </div>
 
+      {/* aqui */}
+      <div className="projects-list">
+        {projectApi.map((project, index) => (
+          <div key={index} className="project-card">
+            <h3 className="project-name">{project.name}</h3>
+            <p className="project-description">{project.description}</p>
+            
+            <a
+              href={project.altLink}
+              className="project-link-alt"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              GitHub
+            </a>
+          </div>
+        ))}
+      </div>
+
       {/* Contenedor para el enlace de descarga del PDF */}
       <div className="github-container">
         <h3>CV for more details about me</h3>
@@ -124,14 +151,14 @@ const Proyects = () => {
 
 
       <div className="github-container">
-        <h3>GitHub para mi repositorio</h3>
+        <h3>Github of my portfolio</h3>
         <a
           href="https://github.com/IvanR16032019/portfolio.git"
           className="github-link"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Visitar mi repositorio
+          See the code here
         </a>
       </div>
 

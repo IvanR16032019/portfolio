@@ -114,18 +114,20 @@
 /* Button styling */
 .back-btn {
   position: absolute;
-  top: 50px;
-  left: 20px;
+  top: 10vh; /* Usa vh para que la distancia desde el top sea relativa al alto de la pantalla */
+  left: 5%; /* Usa % para la distancia desde la izquierda, se ajustará según el tamaño de la pantalla */
   background-color: #0065d2;
   border: 2px solid #ccc;
   padding: 12px 20px;
-  font-size: 16px;
+  font-size: 20px;
   font-weight: 600;
   cursor: pointer;
   color: white;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
+  display: inline-block; /* Asegura que el área clickeable sea correcta */
+  text-align: center; /* Centra el texto si es necesario */
 }
 
 .back-btn:hover {
@@ -135,6 +137,24 @@
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   transform: translateY(-2px);
 }
+
+/* Media query para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .back-btn {
+    top: 5vh; /* Ajuste el top para pantallas más pequeñas */
+    left: 10%; /* Ajusta la distancia desde la izquierda */
+    font-size: 4vw; /* Cambia el tamaño de la fuente para pantallas más pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .back-btn {
+    top: 5vh;
+    left: 15%;
+    font-size: 5vw; /* Asegura que el botón sea lo suficientemente grande para pantallas muy pequeñas */
+  }
+}
+
 
 /* Estilos generales para los divs */
 .obj1, .obj2, .obj3 {
