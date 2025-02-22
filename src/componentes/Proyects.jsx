@@ -17,6 +17,14 @@ const Proyects = () => {
       link: 'https://fashion-r0lj.onrender.com/',
       altLink: 'https://github.com/IvanR16032019/fashion.git'
     },
+
+    {
+      name: 'student management ( email: Prueba@gmail.com password: Prueba12345)',
+      description: 'Manage your students information easily and securely, being able to download the complete list of students in PDF.',
+      link: 'https://students-ov2e.onrender.com/',
+      altLink: 'https://github.com/IvanR16032019/students.git'
+    },
+
     {
       name: 'Calculator',
       description: 'Always have your web calculator on hand.',
@@ -116,6 +124,8 @@ const Proyects = () => {
           </div>
         ))}
       </div>
+
+      <h2 className='obj-title'>Backend proyects:</h2>
 
       {/* aqui */}
       <div className="projects-list">
