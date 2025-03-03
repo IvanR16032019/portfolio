@@ -62,6 +62,11 @@ const Proyects = () => {
       name: 'Crud Students (Node JS, PostgreSQL)',
       description: 'Check out the details of the backend development of this app. Here is the code with the HTTP requests and CRUD functions. Click and see the code on github',
       altLink: 'https://github.com/IvanR16032019/schoolApi.git'
+    },
+    {
+      name: 'MathApp (C#)',
+      description: 'Here is my calculations application, the app is in the link, you can download the installer and do your calculations.',
+      altLink: 'https://github.com/IvanR16032019/portfolio/releases/tag/untagged-ea4a605f9c99745a686b'
     }
   ];
 
@@ -98,7 +103,7 @@ const Proyects = () => {
         </div>
       </div>
 
-      <h2 className='obj-title'>Here are our projects:</h2>
+      <h2 className='obj-title'>Here are our projects React js:</h2>
 
       <div className="projects-list">
         {projects.map((project, index) => (
@@ -125,7 +130,7 @@ const Proyects = () => {
         ))}
       </div>
 
-      <h2 className='obj-title'>Backend proyects:</h2>
+      <h2 className='obj-title'>Backend, C# and other:</h2>
 
       {/* aqui */}
       <div className="projects-list">
