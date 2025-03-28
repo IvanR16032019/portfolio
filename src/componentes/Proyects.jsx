@@ -44,7 +44,7 @@ const Proyects = () => {
       altLink: 'https://github.com/IvanR16032019/billing.git'
     },
     {
-      name: 'User management - only PC (crud / public test API)',
+      name: 'User management - email: Prueba@gmail.com password: Prueba12345 (crud / public test API)',
       description: 'Application for real-time employee management, authentication to protect user information.',
       link: 'https://crud-api-yepo.onrender.com/',
       altLink: 'https://github.com/IvanR16032019/crud_api.git'
@@ -63,10 +63,14 @@ const Proyects = () => {
       description: 'Check out the details of the backend development of this app. Here is the code with the HTTP requests and CRUD functions. Click and see the code on github',
       altLink: 'https://github.com/IvanR16032019/schoolApi.git'
     },
+
+  ];
+
+  const projectCSharp = [
     {
       name: 'MathApp (C#)',
       description: 'Here is my calculations application, the app is in the link, you can download the installer and do your calculations.',
-      altLink: 'https://github.com/IvanR16032019/portfolio/releases/tag/untagged-ea4a605f9c99745a686b'
+      altLink: 'https://github.com/IvanR16032019/portfolio/releases/download/untagged-ea4a605f9c99745a686b/MathApp.zip'
     }
   ];
 
@@ -138,7 +142,7 @@ const Proyects = () => {
           <div key={index} className="project-card">
             <h3 className="project-name">{project.name}</h3>
             <p className="project-description">{project.description}</p>
-            
+
             <a
               href={project.altLink}
               className="project-link-alt"
@@ -148,7 +152,29 @@ const Proyects = () => {
               GitHub
             </a>
           </div>
+          
         ))}
+
+        {projectCSharp.map((project, index) => (
+          <div key={index} className="project-card">
+            <h3 className="project-name">{project.name}</h3>
+            <p className="project-description">{project.description}</p>
+
+            <a
+              href={project.altLink}
+              className="project-link-alt"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Download App
+            </a>
+          </div>
+        ))}
+
+      </div>
+
+      <div className="projects-list">
+        {/* aqui va el sharp, por si acaso */}
       </div>
 
       {/* Contenedor para el enlace de descarga del PDF */}
