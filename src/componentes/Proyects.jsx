@@ -70,7 +70,7 @@ const Proyects = () => {
     {
       name: 'MathApp (C#)',
       description: 'Here is my calculations application, the app is in the link, you can download the installer and do your calculations.',
-      altLink: 'https://github.com/IvanR16032019/portfolio/releases/download/untagged-ea4a605f9c99745a686b/MathApp.zip'
+      altLink: 'https://drive.google.com/file/d/1pGs2pnGRedLYCSiziIxXmld_N7QYlZL3/view?usp=sharing'
     }
   ];
 
@@ -152,7 +152,7 @@ const Proyects = () => {
               GitHub
             </a>
           </div>
-          
+
         ))}
 
         {projectCSharp.map((project, index) => (
