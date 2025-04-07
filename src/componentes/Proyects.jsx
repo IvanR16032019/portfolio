@@ -71,6 +71,12 @@ const Proyects = () => {
       name: 'MathApp (C#)',
       description: 'Here is my calculations application, the app is in the link, you can download the installer and do your calculations.',
       altLink: 'https://drive.google.com/file/d/1pGs2pnGRedLYCSiziIxXmld_N7QYlZL3/view?usp=sharing'
+    },
+
+    {
+      name: 'Calculator (React Native)',
+      description: 'Calculator app for Android, download the APK to test its operation',
+      altLink: 'https://drive.google.com/file/d/1k9jE76IwZhb1sTBP_06IfxUAqWGI4XLl/view?usp=sharing'
     }
   ];
 
@@ -134,7 +140,7 @@ const Proyects = () => {
         ))}
       </div>
 
-      <h2 className='obj-title'>Backend, C# and other:</h2>
+      <h2 className='obj-title'>Node Js, React Native, C# and other:</h2>
 
       {/* aqui */}
       <div className="projects-list">
